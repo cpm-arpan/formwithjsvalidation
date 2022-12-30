@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/myaction.php" name="myform" method="post">
+        <div class="formdesign">
+            <label for="name">Name:</label>
+            <input type="text" name="fname" id="name" oninput="validateform()"><span class="formerror"></span>
+        </div>
+        <div class="formdesign">
+            <label for="email">Email:</label>
+            <input type="email" name="femail" id="email" oninput="validateform()"><span class="formerror"></span>
+        </div>
+        <div class="formdesign">
+            <label for="phone">phone</label>
+            <input type="phone" name="phone" id="phone" oninput="validateform()"><span class="formerror"></span>
+        </div>
+        <div class="formdesign">
+            <label for="website">website</label>
+            <input type="text" name="website" id="website" oninput="validateform()">
+            <p>include HTTPS:// or HTTP://</p>
+        </div>
+        <button class="btn" type="button" value="submit" id="sbt-btn">Sunmit</button>
+        <script src="script.js"></script>
+    </form>
+</body>
+
+</html>
